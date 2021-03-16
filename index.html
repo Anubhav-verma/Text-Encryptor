@@ -23,17 +23,17 @@
                 <div class="card-header">Enter your text here</div>
                 <div class="card-body">
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                        <textarea class="form-control" id="userText" rows="8"></textarea>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row justify-content-lg-center  arow">
             <div class="col-lg-5 col-12 col-sm-12 mb-3 acolumn">
-                <input type="text" class="form-control mb-2 acolumn" placeholder="Digit" aria-label="Username"
-                    style="max-width: 100px;">
-                <button type="button" class="btn btn-primary">Encrypt</button>
-                <button type="button" class="btn btn-success">Decrypt</button>
+                <input type="number" class="form-control mb-2 acolumn" placeholder="Key" aria-label="Username"
+                    style="max-width: 100px;" id="key">
+                <button type="button" class="btn btn-primary" onclick="encrypt()">Encrypt</button>
+                <button type="button" class="btn btn-success" onclick="decrypt()">Decrypt</button>
             </div>
         </div>
         <div class="row justify-content-lg-center  arow"></div>
@@ -42,12 +42,13 @@
                 style="max-width: auto; height: 300px;">
                 <div class="card-header">Converted Text</div>
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <div class="form-group">
+                        <textarea class="form-control" id="output" rows="8"></textarea>
+                    </div>
                 </div>
             </div>
         </div>
-
+        <script src="index.js"></script>
 </body>
 
 </html>
